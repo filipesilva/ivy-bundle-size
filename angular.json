@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cli-hello-world-ivy",
+            "outputPath": "dist/cli-current",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -36,8 +36,8 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
+              "outputHashing": "none",
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,

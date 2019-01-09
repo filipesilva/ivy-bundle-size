@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cli-current": "ng build --prod",
+    "cli-ivy": "ng build --prod --tsConfig=src/tsconfig.app.ngtsc.json --outputPath=dist/cli-ivy",
+    "ngcc": "ivy-ngcc -p src/tsconfig.app.ngtsc.json",
+    "postinstall": "npm run ngcc"
   },
   "private": true,
   "dependencies": {
