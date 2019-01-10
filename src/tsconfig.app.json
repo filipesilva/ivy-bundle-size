@@ -3,9 +3,5 @@
   "compilerOptions": {
     "outDir": "../out-tsc/tsc-current",
     "types": []
-  },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+  }
 }

@@ -4,9 +4,7 @@
     "outDir": "../out-tsc/tsc-ivy",
   },
   "exclude": [
-    "main.ngc.ts",
-    "test.ts",
-    "**/*.spec.ts"
+    "main.ngc.ts"
   ],
   "angularCompilerOptions": {
     "enableIvy": "ngtsc"
