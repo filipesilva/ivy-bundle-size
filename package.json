@@ -5,6 +5,7 @@
     "ng": "ng",
     "bazel": "bazel",
     "bazel-current": "bazel build //src:bundle_current",
+    "bazel-ivy": "bazel build //src:bundle_ivy",
     "cli-current": "ng build --prod",
     "cli-ivy": "ng build --prod --tsConfig=src/tsconfig.ngtsc.json --outputPath=dist/cli-ivy",
     "ngc": "ngc -p src/tsconfig.ngc.json",
@@ -13,7 +14,8 @@
     "rollup-ivy": "rollup -c src/rollup.config.js -i ./out-tsc/tsc-ivy/main.ngtsc.js -o ./dist/rollup-ivy/main.js",
     "ngcc": "ivy-ngcc -p src/tsconfig.ngtsc.json",
     "current": "yarn cli-current && yarn ngc && yarn rollup-current && yarn bazel-current",
-    "ivy": "yarn ngcc && yarn cli-ivy && yarn ngtsc && yarn rollup-ivy"
+    "ivy": "yarn ngcc && yarn cli-ivy && yarn ngtsc && yarn rollup-ivy && yarn bundle-ivy",
+    "clean-ngcc": "rm -rf node_modules/@angular/"
   },
   "private": true,
   "dependencies": {

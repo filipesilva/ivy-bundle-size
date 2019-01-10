@@ -32,6 +32,20 @@ http_archive(
     url = "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.3.tgz",
 )
 
+http_archive(
+    name = "angular_cli",
+    sha256 = "8cf320ea58c321e103f39087376feea502f20eaf79c61a4fdb05c7286c8684fd",
+    strip_prefix = "angular-cli-6.1.0-rc.0",
+    url = "https://github.com/angular/angular-cli/archive/v6.1.0-rc.0.zip",
+)
+
+http_archive(
+    name = "org_brotli",
+    sha256 = "774b893a0700b0692a76e2e5b7e7610dbbe330ffbe3fe864b4b52ca718061d5a",
+    strip_prefix = "brotli-1.0.5",
+    url = "https://github.com/google/brotli/archive/v1.0.5.zip",
+)
+
 load("@angular//packages/bazel:package.bzl", "rules_angular_dependencies")
 
 rules_angular_dependencies()
