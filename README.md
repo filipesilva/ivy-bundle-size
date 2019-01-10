@@ -1,14 +1,14 @@
 # Ivy Bundle Size
 
-Run `git clean -fdx && yarn && yarn current && yarn ivy` for a clean comparison.
+Run `yarn clean-ngcc && yarn && yarn current && yarn ivy` for a clean comparison.
 
 See `./snapshots` for latest saved bundles.
 
 | Platform | Setup  | Current | Ivy |
 |----------|--------|---------|-----|
-| Linux    | CLI    |         |     |
-|          | Rollup |         |     |
-|          | Bazel  |         |     |
-| Windows  | CLI    | 137     | 477 |
+| Linux    | CLI    | 137     | 481 |
+|          | Rollup | 137     | 36  |
+|          | Bazel  | 163     | 90  |
+| Windows  | CLI    | 137     | 469 |
 |          | Rollup | 137     | 36  |
 |          | Bazel  | 171     | 98  |
