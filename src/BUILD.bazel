@@ -1,0 +1,31 @@
+load("@angular//:index.bzl", "ng_module")
+load("@build_bazel_rules_nodejs//:defs.bzl", "rollup_bundle")
+load("@build_bazel_rules_typescript//:defs.bzl", "ts_config")
+
+package(default_visibility = ["//visibility:public"])
+
+alias(
+    name = "tsconfig.json",
+    actual = "//src:tsconfig.ngc.json",
+)
+
+ng_module(
+    name = "ngmodule_current",
+    srcs = [
+      "main.ngc.ts",
+      "app.module.ts",
+    ],
+    tsconfig = ":tsconfig.json",
+    deps = [
+        "@angular//packages/core",
+        "@angular//packages/platform-browser",
+    ],
+)
+
+rollup_bundle(
+    name = "bundle_current",
+    entry_point = "src/main.ngc",
+    deps = [
+        ":ngmodule_current",
+    ],
+)

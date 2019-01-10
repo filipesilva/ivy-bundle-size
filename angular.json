@@ -16,7 +16,7 @@
             "outputPath": "dist/cli-current",
             "index": "src/index.html",
             "main": "src/main.cli.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "tsConfig": "src/tsconfig.ngc.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
