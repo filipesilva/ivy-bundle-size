@@ -7,10 +7,10 @@ package(default_visibility = ["//visibility:public"])
 ng_module(
     name = "ngmodule_current",
     srcs = [
-      "main.ngc.ts",
+      "main.current.ts",
       "app.module.ts",
     ],
-    tsconfig = ":tsconfig.ngc.json",
+    tsconfig = ":tsconfig.current.json",
     deps = [
         "@angular//packages/core",
         "@angular//packages/platform-browser",
@@ -20,7 +20,7 @@ ng_module(
 
 ng_rollup_bundle(
     name = "bundle_current",
-    entry_point = "src/main.ngc",
+    entry_point = "src/main.current",
     deps = [
         ":ngmodule_current",
         "@angular//packages/core",
@@ -32,9 +32,9 @@ ng_rollup_bundle(
 ng_module(
     name = "ngmodule_ivy",
     srcs = [
-      "main.ngtsc.ts",
+      "main.ivy.ts",
     ],
-    tsconfig = ":tsconfig.ngtsc.json",
+    tsconfig = ":tsconfig.ivy.json",
     deps = [
         "@angular//packages/core",
         "@npm//tslib"
@@ -43,7 +43,7 @@ ng_module(
 
 ng_rollup_bundle(
     name = "bundle_ivy",
-    entry_point = "src/main.ngtsc.js",
+    entry_point = "src/main.ivy.js",
     deps = [
         ":ngmodule_ivy",
         "@angular//packages/core",

@@ -16,7 +16,7 @@
             "outputPath": "dist/cli-current",
             "index": "src/unused-index.html",
             "main": "src/main.cli.ts",
-            "tsConfig": "src/tsconfig.ngc.json",
+            "tsConfig": "src/tsconfig.current.json",
             "scripts": []
           },
           "configurations": {

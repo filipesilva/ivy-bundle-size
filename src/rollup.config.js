@@ -37,7 +37,7 @@ const cliUglifyConfig = {
 }
 
 export default {
-  input: './out-tsc/tsc-current/src/main.ngc.js',
+  input: './out-tsc/tsc-current/src/main.current.js',
   output: {
     file: './dist/rollup-current/main.js',
     format: 'iife',

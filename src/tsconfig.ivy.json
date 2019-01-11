@@ -20,7 +20,7 @@
     "types": []
   },
   "exclude": [
-    "main.ngc.ts"
+    "main.current.ts"
   ],
   "angularCompilerOptions": {
     "enableIvy": "ngtsc"
