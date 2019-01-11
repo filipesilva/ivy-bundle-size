@@ -14,13 +14,9 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/cli-current",
-            "index": "src/index.html",
+            "index": "src/unused-index.html",
             "main": "src/main.cli.ts",
             "tsConfig": "src/tsconfig.ngc.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
             "scripts": []
           },
           "configurations": {
@@ -31,7 +27,6 @@
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
-              "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
