@@ -23,10 +23,11 @@ You can update all snapshots after builds with `yarn update-windows-snapshots` a
 `yarn update-linux-snapshots`, or individually:
 - `yarn update-windows-cli-rollup-snapshots`
 - `yarn update-windows-bazel-current-snapshots`
-- `yarn update-windows-bazel-ivy-snapshots`
+- `yarn update-windows-bazel-ivy-compat-snapshots`
 - `yarn update-linux-cli-rollup-snapshots`
 - `yarn update-linux-bazel-current-snapshots`
 - `yarn update-linux-bazel-ivy-snapshots`
+- `yarn update-linux-bazel-ivy-compat-snapshots`
 
 Run `yarn test` to test the snapshots are working apps.
 
