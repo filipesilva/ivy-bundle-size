@@ -15,7 +15,7 @@
     "ngcc": "ivy-ngcc -p src/tsconfig.ngtsc.json",
     "current": "yarn cli-current && yarn ngc && yarn rollup-current && yarn bazel-current",
     "ivy": "yarn ngcc && yarn cli-ivy && yarn ngtsc && yarn rollup-ivy && yarn bundle-ivy",
-    "clean-ngcc": "rm -rf node_modules/@angular/"
+    "clean-ngcc": "rm -rf node_modules"
   },
   "private": true,
   "dependencies": {

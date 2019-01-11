@@ -47,7 +47,7 @@ export default {
   plugins: [
     nodeResolve(),
     buildOptimizer({
-      // Doesn't look like having these is making a difference. Figure out why.
+      // Use linux style paths after https://github.com/angular/angular-cli/pull/13404 is released.
       sideEffectFreeModules: [
         `node_modules${sep}@angular${sep}core${sep}`,
         `node_modules${sep}@angular${sep}platform-browser${sep}`,

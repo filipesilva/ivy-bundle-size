@@ -19,9 +19,13 @@ http_archive(
 # The @angular repo contains rule for building Angular applications
 http_archive(
     name = "angular",
-    sha256 = "8a4915a524f3fed17424da4b77cd7a943fbbddba44275f06671493339713914b",
-    strip_prefix = "angular-7.2.0",
-    url = "https://github.com/angular/angular/archive/7.2.0.zip",
+    # Fix 7.2.0-with-external-rollup https://github.com/angular/angular/pull/28049
+    sha256 = "5f08d5384d6796c8c39d83134c87d383d195385193b897e3686a34ef247b69b7",
+    strip_prefix = "angular-f5c0066429fd673c56ceac89a8a2ac7ff9305651",
+    url = "https://github.com/filipesilva/angular/archive/f5c0066429fd673c56ceac89a8a2ac7ff9305651.zip",
+    # sha256 = "8a4915a524f3fed17424da4b77cd7a943fbbddba44275f06671493339713914b",
+    # strip_prefix = "angular-7.2.0",
+    # url = "https://github.com/angular/angular/archive/7.2.0.zip",
 )
 
 # The @rxjs repo contains targets for building rxjs with bazel
@@ -34,9 +38,13 @@ http_archive(
 
 http_archive(
     name = "angular_cli",
-    sha256 = "8cf320ea58c321e103f39087376feea502f20eaf79c61a4fdb05c7286c8684fd",
-    strip_prefix = "angular-cli-6.1.0-rc.0",
-    url = "https://github.com/angular/angular-cli/archive/v6.1.0-rc.0.zip",
+    # Fix for rollup plugin on windows (https://github.com/angular/angular-cli/pull/13404) backported to 6.1.0-rc.0.
+    sha256 = "cb48c41fa7d48ac677a69168ec3a6d4f0ba67b260e68b19587e3ce31b3a10cda",
+    strip_prefix = "angular-cli-6b45c898ab831d5e9cd7cbe0e1f990776a712bc9",
+    url = "https://github.com/filipesilva/angular-cli/archive/6b45c898ab831d5e9cd7cbe0e1f990776a712bc9.zip",
+    # sha256 = "8cf320ea58c321e103f39087376feea502f20eaf79c61a4fdb05c7286c8684fd",
+    # strip_prefix = "angular-cli-6.1.0-rc.0",
+    # url = "https://github.com/angular/angular-cli/archive/v6.1.0-rc.0.zip",
 )
 
 http_archive(

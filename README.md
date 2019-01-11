@@ -8,7 +8,11 @@ See `./snapshots` for latest saved bundles.
 |----------|--------|---------|-----|
 | Linux    | CLI    | 137     | 481 |
 |          | Rollup | 137     | 36  |
-|          | Bazel  | 163     | 90  |
+|          | Bazel  | 122     | 8.8 |
 | Windows  | CLI    | 137     | 469 |
 |          | Rollup | 137     | 36  |
-|          | Bazel  | 171     | 98  |
+|          | Bazel  | 122     | 8.8 |
+
+
+Note: on a Windows machine with Docker, use the following command on gitbash to test Linux:
+`docker run -v $(pwd -W):/ivy-bundle-size -it node:10.12 bash`
