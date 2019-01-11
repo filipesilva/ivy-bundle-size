@@ -23,9 +23,15 @@ describe('workspace-project App', () => {
     'windows/cli-ivy/',
     'windows/bazel-ivy/',
     'windows/rollup-ivy/',
+    'windows/cli-ivy-compat/',
+    'windows/bazel-ivy-compat/',
+    'windows/rollup-ivy-compat/',
     'linux/cli-ivy/',
     'linux/bazel-ivy/',
     'linux/rollup-ivy/',
+    'linux/cli-ivy-compat/',
+    'linux/bazel-ivy-compat/',
+    'linux/rollup-ivy-compat/',
   ];
 
   // Ivy snapshots fail on protractor when waiting for Angular.

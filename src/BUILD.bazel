@@ -28,7 +28,6 @@ ng_rollup_bundle(
     ],
 )
 
-
 ng_module(
     name = "ngmodule_ivy",
     srcs = [
@@ -46,6 +45,30 @@ ng_rollup_bundle(
     entry_point = "src/main.ivy.js",
     deps = [
         ":ngmodule_ivy",
+        "@angular//packages/core",
+        "@npm//tslib"
+    ],
+)
+
+ng_module(
+    name = "ngmodule_ivy_compat",
+    srcs = [
+      "main.ivy-compat.ts",
+      "app.module.ts",
+    ],
+    tsconfig = ":tsconfig.ivy.json",
+    deps = [
+        "@angular//packages/core",
+        "@angular//packages/platform-browser",
+        "@npm//tslib"
+    ],
+)
+
+ng_rollup_bundle(
+    name = "bundle_ivy_compat",
+    entry_point = "src/main.ivy-compat.js",
+    deps = [
+        ":ngmodule_ivy_compat",
         "@angular//packages/core",
         "@npm//tslib"
     ],
