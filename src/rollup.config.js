@@ -3,7 +3,6 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import filesize from 'rollup-plugin-filesize';
 import { terser } from 'rollup-plugin-terser';
 import buildOptimizer from '@angular-devkit/build-optimizer/src/build-optimizer/rollup-plugin.js';
-import { sep } from 'path';
 
 const bazelUglifyConfig = {
   compress: {
@@ -47,13 +46,12 @@ export default {
   plugins: [
     nodeResolve(),
     buildOptimizer({
-      // Use linux style paths after https://github.com/angular/angular-cli/pull/13404 is released.
       sideEffectFreeModules: [
-        `node_modules${sep}@angular${sep}core${sep}`,
-        `node_modules${sep}@angular${sep}platform-browser${sep}`,
-        `node_modules${sep}@angular${sep}common${sep}`,
-        `node_modules${sep}@angular${sep}compiler${sep}`,
-        `node_modules${sep}rxjs${sep}`,
+        `node_modules/@angular/core/`,
+        `node_modules/@angular/platform-browser/`,
+        `node_modules/@angular/common/`,
+        `node_modules/@angular/compiler/`,
+        `node_modules/rxjs/`,
       ]
     }),
     terser(cliUglifyConfig),

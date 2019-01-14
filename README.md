@@ -4,17 +4,16 @@ Latest results:
 
 | Platform | Setup  | Current | Ivy | Ivy-compat |
 |----------|--------|--------:|----:|-----------:|
-| Linux    | CLI    |     176 |  37 |       483* |
-|          | Rollup |     176 |  37 |        86* |
-|          | Bazel  |     160 | 8.8*|        64* |
-| Windows  | CLI    |     176 |  37 |       483* |
-|          | Rollup |     176 |  37 |        86* |
-|          | Bazel  |     160 | 8.8*|        64* |
+| Linux    | CLI    |     176 |  37 |        181 |
+|          | Rollup |     176 |  37 |        181 |
+|          | Bazel  |     160 | 9.3*|        64* |
+| Windows  | CLI    |     176 |  37 |        181 |
+|          | Rollup |     176 |  37 |        181 |
+|          | Bazel  |     160 | 9.3*|        64* |
 
 Items with `*` are currently failing e2e at runtime:
 - Bazel+Ivy fails with `Uncaught TypeError: Cannot read property 'type' of null`.
 - Bazel+Ivy compat fails with `Uncaught Error: StaticInjectorError(Platform: core)[Bn]:`.
-- CLI/Rollup+Ivy compat fails with `No ErrorHandler. Is platform module (BrowserModule) included?`.
 
 Run `yarn build` for a clean build.
 

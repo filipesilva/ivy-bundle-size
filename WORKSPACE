@@ -19,13 +19,10 @@ http_archive(
 # The @angular repo contains rule for building Angular applications
 http_archive(
     name = "angular",
-    # Fix 7.2.0-with-external-rollup https://github.com/angular/angular/pull/28049
-    sha256 = "5f08d5384d6796c8c39d83134c87d383d195385193b897e3686a34ef247b69b7",
-    strip_prefix = "angular-f5c0066429fd673c56ceac89a8a2ac7ff9305651",
-    url = "https://github.com/filipesilva/angular/archive/f5c0066429fd673c56ceac89a8a2ac7ff9305651.zip",
-    # sha256 = "8a4915a524f3fed17424da4b77cd7a943fbbddba44275f06671493339713914b",
-    # strip_prefix = "angular-7.2.0",
-    # url = "https://github.com/angular/angular/archive/7.2.0.zip",
+    # Snapshot post 7.2.0 that includes recent fixes.
+    # sha256 = "5f08d5384d6796c8c39d83134c87d383d195385193b897e3686a34ef247b69b7",
+    strip_prefix = "angular-da2880d7c495022405102f89b8c641b23516388d",
+    url = "https://github.com/filipesilva/angular/archive/da2880d7c495022405102f89b8c641b23516388d.zip",
 )
 
 # The @rxjs repo contains targets for building rxjs with bazel
