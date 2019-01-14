@@ -14,7 +14,6 @@ ng_module(
     deps = [
         "@angular//packages/core",
         "@angular//packages/platform-browser",
-        "@npm//tslib"
     ],
 )
 
@@ -23,7 +22,6 @@ ng_rollup_bundle(
     entry_point = "src/main.current",
     deps = [
         ":ngmodule_current",
-        "@angular//packages/core",
         "@npm//tslib"
     ],
 )
@@ -36,7 +34,6 @@ ng_module(
     tsconfig = ":tsconfig.ivy.json",
     deps = [
         "@angular//packages/core",
-        "@npm//tslib"
     ],
 )
 
@@ -45,7 +42,6 @@ ng_rollup_bundle(
     entry_point = "src/main.ivy.js",
     deps = [
         ":ngmodule_ivy",
-        "@angular//packages/core",
         "@npm//tslib"
     ],
 )
@@ -60,7 +56,6 @@ ng_module(
     deps = [
         "@angular//packages/core",
         "@angular//packages/platform-browser",
-        "@npm//tslib"
     ],
 )
 
@@ -69,7 +64,6 @@ ng_rollup_bundle(
     entry_point = "src/main.ivy-compat.js",
     deps = [
         ":ngmodule_ivy_compat",
-        "@angular//packages/core",
         "@npm//tslib"
     ],
 )
