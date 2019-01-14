@@ -36,7 +36,8 @@
     "update-linux-bazel-ivy-snapshots": "rm -f snapshots/linux/bazel-ivy/*.min.* && cp ./dist-bazel/bin/src/bundle_ivy.min.* snapshots/linux/bazel-ivy/",
     "update-linux-bazel-ivy-compat-snapshots": "rm -f snapshots/linux/bazel-ivy-compat/*.min.* && cp ./dist-bazel/bin/src/bundle_ivy_compat.min.* snapshots/linux/bazel-ivy-compat/",
     "serve": "http-server ./snapshots",
-    "test": "concurrently -s=first \"yarn serve -s\" \"protractor ./e2e/protractor.conf.js\" --kill-others"
+    "test": "concurrently -s=first \"yarn serve -s\" \"protractor ./e2e/protractor.conf.js\" --kill-others",
+    "sme": "source-map-explorer"
   },
   "private": true,
   "dependencies": {
@@ -70,6 +71,7 @@
     "rollup-plugin-filesize": "6.0.0",
     "rollup-plugin-node-resolve": "4.0.0",
     "rollup-plugin-terser": "4.0.2",
+    "source-map-explorer": "^1.6.0",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
   }
