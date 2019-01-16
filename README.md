@@ -11,9 +11,8 @@ Latest results:
 |          | Rollup |     176 |  37 |        181 |
 |          | Bazel  |     160 |  12*|        183*|
 
-Notes:
-- Bazel+Ivy/Ivy-compat fail to build outside angular/angular with `external/angular/packages/types.d.ts(12,23): error TS2688: Cannot find type definition file for 'zone.js'.`.
-- Bazel+Ivy/Ivy-compat snapshots taken from angular/angular via `yarn test-ivy-aot //packages/core/test/bundling/hello_world:bundle` and `yarn test-ivy-aot //packages/core/test/bundling/hello_world_r2:bundle`
+Notes for * items:
+- Bazel+Ivy/Ivy-compat fail to build outside angular/angular (https://github.com/angular/angular/issues/28182).
 
 Run `yarn build` for a clean build.
 
