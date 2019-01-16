@@ -6,14 +6,14 @@ Latest results:
 |----------|--------|--------:|----:|-----------:|
 | Linux    | CLI    |     176 |  37 |        181 |
 |          | Rollup |     176 |  37 |        181 |
-|          | Bazel  |     160 | 9.3*|        64* |
+|          | Bazel  |     160 |  12*|        183*|
 | Windows  | CLI    |     176 |  37 |        181 |
 |          | Rollup |     176 |  37 |        181 |
-|          | Bazel  |     160 | 9.3*|        64* |
+|          | Bazel  |     160 |  12*|        183*|
 
-Items with `*` are currently failing e2e at runtime:
-- Bazel+Ivy fails with `Uncaught TypeError: Cannot read property 'type' of null`.
-- Bazel+Ivy compat fails with `Uncaught Error: StaticInjectorError(Platform: core)[Bn]:`.
+Notes:
+- Bazel+Ivy/Ivy-compat fail to build outside angular/angular with `external/angular/packages/types.d.ts(12,23): error TS2688: Cannot find type definition file for 'zone.js'.`.
+- Bazel+Ivy/Ivy-compat snapshots taken from angular/angular via `yarn test-ivy-aot //packages/core/test/bundling/hello_world:bundle` and `yarn test-ivy-aot //packages/core/test/bundling/hello_world_r2:bundle`
 
 Run `yarn build` for a clean build.
 
