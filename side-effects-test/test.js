@@ -62,6 +62,11 @@ const inputOptions = {
     buildOptimizer(buildOptimizerConfig),
     terser(terserConfig),
     filesize(),
+  ],
+  external: [
+    // 'rxjs',
+    // 'rxjs/operators',
+    // 'tslib',
   ]
 };
 
@@ -75,7 +80,9 @@ const outputOptions = {
 async function test() {
   // Create a bundle.
   const bundle = await rollup.rollup(inputOptions);
+
   // `bundle.watchFiles` is an array of files the bundle depends on.
+  // bundle.watchFiles.forEach(f => console.log(f));
 
   // Write the bundle to disk.
   await bundle.write(outputOptions);
@@ -85,7 +92,8 @@ async function test() {
 
   console.log(`\n`
     + `  Open http://sokra.github.io/source-map-visualization/ and drag the output js and \n`
-    + `  js.map to see where the remaining code comes from.`)
+    + `  js.map to see where the remaining code comes from.`
+    + `\n`);
 }
 
 test();
