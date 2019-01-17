@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "bazel": "bazel",
+    "side-effects-test": "node side-effects-test/test.js",
     "//build-scripts": "",
     "build": "yarn clean-ngcc && yarn current && yarn ngcc && yarn ivy && yarn ivy-compat",
     "bazel-current": "bazel build //src:bundle_current",

@@ -3,3 +3,4 @@
 /out-tsc
 /bazel-*
 /dist-bazel
+/dist-side-effects
