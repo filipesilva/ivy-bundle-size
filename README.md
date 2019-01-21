@@ -4,11 +4,11 @@ Latest results:
 
 | Platform | Setup  | Current | Ivy | Ivy-compat |
 |----------|--------|--------:|----:|-----------:|
-| Linux    | CLI    |     176 |  37 |        181 |
-|          | Rollup |     176 |  37 |        181 |
+| Linux    | CLI    |     152 |  12 |        181 |
+|          | Rollup |     152 |  12 |        181 |
 |          | Bazel  |     160 |  12*|        183*|
-| Windows  | CLI    |     176 |  37 |        181 |
-|          | Rollup |     176 |  37 |        181 |
+| Windows  | CLI    |     152 |  12 |        181 |
+|          | Rollup |     152 |  12 |        181 |
 |          | Bazel  |     160 |  12*|        183*|
 
 Notes for * items:
