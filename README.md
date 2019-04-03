@@ -7,8 +7,8 @@ Latest results:
 | Linux    | CLI    |     152 |  12 |        181 |
 |          | Rollup |     152 |  12 |        181 |
 |          | Bazel  |     160 |  12*|        183*|
-| Windows  | CLI    |     152 |  12 |        181 |
-|          | Rollup |     152 |  12 |        181 |
+| Windows  | CLI    |     152 |  12 |        138 |
+|          | Rollup |     152 |  12 |        138 |
 |          | Bazel  |     160 |  12*|        183*|
 
 Notes for * items:

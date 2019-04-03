@@ -17,7 +17,7 @@
     "rollup-current": "rollup -c src/rollup.config.js",
     "rollup-ivy": "rollup -c src/rollup.config.js -i ./out-tsc/tsc-ivy/main.ivy.js -o ./dist/rollup-ivy/main.js",
     "rollup-ivy-compat": "rollup -c src/rollup.config.js -i ./out-tsc/tsc-ivy/main.ivy-compat.js -o ./dist/rollup-ivy-compat/main.js",
-    "ngcc": "ivy-ngcc -p src/tsconfig.ivy.json",
+    "ngcc": "ivy-ngcc",
     "current": "yarn cli-current && yarn ngc && yarn rollup-current && yarn bazel-current",
     "ivy": "yarn cli-ivy && yarn ngtsc && yarn rollup-ivy && yarn bazel-ivy",
     "ivy-compat": "yarn cli-ivy-compat && yarn ngtsc && yarn rollup-ivy-compat && yarn bazel-ivy-compat",
@@ -41,22 +41,22 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "github:angular/common-builds#8.0.0-beta.0+73dcd72",
-    "@angular/compiler": "github:angular/compiler-builds#8.0.0-beta.0+73dcd72",
-    "@angular/core": "github:angular/core-builds#8.0.0-beta.0+73dcd72",
-    "@angular/platform-browser": "github:angular/platform-browser-builds#8.0.0-beta.0+73dcd72",
-    "@angular/platform-browser-dynamic": "github:angular/platform-browser-dynamic-builds#8.0.0-beta.0+73dcd72",
-    "@angular/router": "github:angular/router-builds#8.0.0-beta.0+73dcd72",
+    "@angular/common": "github:angular/common-builds#8.0.0-beta.10+a6809e0",
+    "@angular/compiler": "github:angular/compiler-builds#8.0.0-beta.10+a6809e0",
+    "@angular/core": "github:angular/core-builds#8.0.0-beta.10+a6809e0",
+    "@angular/platform-browser": "github:angular/platform-browser-builds#8.0.0-beta.10+a6809e0",
+    "@angular/platform-browser-dynamic": "github:angular/platform-browser-dynamic-builds#8.0.0-beta.10+a6809e0",
+    "@angular/router": "github:angular/router-builds#8.0.0-beta.10+a6809e0",
     "rxjs": "6.3.3",
     "tslib": "1.9.0",
-    "zone.js": "0.8.26"
+    "zone.js": "0.9.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "github:angular/angular-devkit-build-angular-builds#1a3ba03",
-    "@angular-devkit/build-optimizer": "github:angular/angular-devkit-build-optimizer-builds#1a3ba03",
+    "@angular-devkit/build-angular": "0.800.0-beta.10",
+    "@angular-devkit/build-optimizer": "0.800.0-beta.10",
     "@angular/bazel": "7.2.0",
     "@angular/cli": "7.2.1",
-    "@angular/compiler-cli": "github:angular/compiler-cli-builds#8.0.0-beta.0+73dcd72",
+    "@angular/compiler-cli": "github:angular/compiler-cli-builds#8.0.0-beta.10+a6809e0",
     "@bazel/bazel": "0.21.0",
     "@bazel/typescript": "0.22.0",
     "@types/jasmine": "2.8.8",
@@ -73,6 +73,6 @@
     "rollup-plugin-terser": "4.0.2",
     "source-map-explorer": "^1.6.0",
     "ts-node": "7.0.1",
-    "typescript": "3.2.2"
+    "typescript": "3.3.4000"
   }
 }
